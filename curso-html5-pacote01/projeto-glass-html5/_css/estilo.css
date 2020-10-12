@@ -124,4 +124,24 @@ h2#ti2{
     margin-top: 1px;
 }
 
+footer{
+    text-align: center;
+    clear: both;
+    border-top: 1px black dashed;
+    padding-top: 12px;
+}
 
+/*Css da section,aside e footer*/
+section#corpo{
+    display: block;
+    width: 520px;
+    float: left;
+    border-right: 1px rgb(0, 0, 0) dashed;
+    padding-right: 15px;
+}
+
+aside#lateral{
+    display: block;
+    width: 350px;
+    float: right;
+}
