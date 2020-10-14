@@ -151,6 +151,18 @@ table#tabela td {
     padding: 8px;
 }
 
+td.ce{
+    color: white;
+    background-color: rgba(169, 169, 169, 0.979);
+    font-weight: bolder;
+}
+
+td.cd{
+    color: black;
+    background-color: rgba(169, 169, 169, 0.411);
+
+}
+
 table#tabela {
     border: 1px solid darkgray;
     border-radius: 10px;
@@ -159,4 +171,18 @@ table#tabela {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+}
+
+table#tabela caption{
+    color: rgb(138, 136, 133);
+    font-size: 12pt;
+    font-weight: bolder;
+}
+
+table#tabela caption span{
+    display: block;
+    float: right;
+    font: black;
+    margin-top:  10px;
+    font-size: 8pt;
 }
