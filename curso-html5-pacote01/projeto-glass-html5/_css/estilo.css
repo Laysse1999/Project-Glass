@@ -5,10 +5,25 @@
     src: url(../_fonts/DancingScript-VariableFont_wght.ttf);
 }
 
+/*
+Corpo:
+*/
+
+
 body {
     font: normal arial 13pt;
     background-color: black;
 
+}
+
+section#corpo{
+    display: block;
+    width: 500px;
+    float: left;
+    border-right: 1px rgb(0, 0, 0) dashed;
+    padding-right: 15px;
+    background-color: rgba(169, 169, 169, 0.596);
+    text-align: center;
 }
 
 div#interface {
@@ -21,6 +36,15 @@ div#interface {
     color: rgb(0, 0, 0);
 }
 
+aside#lateral{
+    display: block;
+    width: 350px;
+    float: right;
+    background-color: rgba(169, 169, 169, 0.596);
+    padding: 10px;
+    margin-top: 6px;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.589);
+}
 
 p {
     text-align: justify;
@@ -28,7 +52,7 @@ p {
 }
 
 
-/*Objeto pai:*/
+/*Imagem oculos*/
 figure.foto-legenda {
     position: relative;
     border: 8px solid rgb(255, 255, 255);
@@ -42,7 +66,7 @@ figure.foto-legenda img {
     border-radius: 20px;
 }
 
-/*Objeto filho:*/
+
 figure.foto-legenda figcaption {
     opacity: 0;
     position: absolute;
@@ -56,13 +80,17 @@ figure.foto-legenda figcaption {
     border-radius: 20px;
     transition: opacity 1s;
 }
-
+img#ocu {
+    position: absolute;
+    left: 1070px;
+    top: 73px;
+}
 /*Dispara quando acionado:*/
 figure.foto-legenda:hover figcaption {
     opacity: 1;
 }
 
-/*Formatação css do Menu*/
+/*Menu:*/
 nav#menu ul {
     list-style: none;
     text-transform: uppercase;
@@ -81,15 +109,19 @@ nav#menu li {
 
 nav#menu {
     display: block;
+
 }
 
 nav#menu h1 {
     display: none;
 }
 
+
 nav#menu li:hover {
     background-color: darkgray;
+    
 }
+
 
 nav#menu a {
     color: black;
@@ -100,16 +132,13 @@ nav#menu a:hover {
     color: white text-decoration
 }
 
-img#ocu {
-    position: absolute;
-    left: 1070px;
-    top: 78px;
-}
 
 header#cabecalho div#titulos {
     border-bottom: 1px rgb(0, 0, 0) dashed;
     height: 54px;
 }
+
+/*Titulos: */
 
 h1#ti1 {
     font-family: 'FonteZica', sans-serif;
@@ -127,6 +156,7 @@ h2#ti2 {
     padding: 0px;
     margin-top: 1px;
 }
+/*Css do footer*/
 
 footer{
     text-align: center;
@@ -136,26 +166,7 @@ footer{
     color: blanchedalmond;
 }
 
-/*Css da section,aside e footer*/
-section#corpo{
-    display: block;
-    width: 500px;
-    float: left;
-    border-right: 1px rgb(0, 0, 0) dashed;
-    padding-right: 15px;
-    background-color: rgba(169, 169, 169, 0.596);
-    text-align: center;
-}
-
-aside#lateral{
-    display: block;
-    width: 350px;
-    float: right;
-    background-color: rgba(169, 169, 169, 0.596);
-    padding: 10px;
-    margin-top: 6px;
-    box-shadow: 3px 3px rgba(0, 0, 0, 0.589);
-}
+/*css da tabela :*/
 
 table#tabela td {
     border: 1px solid darkgray;
@@ -198,6 +209,7 @@ table#tabela caption span{
     font-size: 8pt;
 }
 
+/*Artigo ou conteudo da página: */
 article#artigo h1{
     font-size: 14pt;
     color: rgba(0, 0, 0, 0.966);
