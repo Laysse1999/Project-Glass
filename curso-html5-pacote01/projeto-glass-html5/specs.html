@@ -5,7 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="_css/estilo.css">
+    <link rel="stylesheet" href="specs.css">
     <title>Google Glass</title>
+    <style>
+        section#corpo{
+            width: auto;
+        }
+        img#interacao{
+            border-radius: 10px;
+            width: 400px;
+            height: 270px;
+        }
+        iframe#frame-spec{
+            width: 300px;
+            height: 280px;
+            border: none;
+        }
+    </style>
 </head>
 <script src="script1.js"></script>
 
@@ -33,7 +49,9 @@
                             <li onmouseover="foto('_imagens/multimidia.png')"
                                 onmouseout="foto('_imagens/especificacoes.png')"> <a
                                     href="multimidia.html">Multimídia</a> </li>
-                            <li onmouseover="foto('_imagens/contato.png')" onmouseout="foto('_imagens/especificacoes.png')"> <a href="fale-conosco.html" >Fale conosco</a>
+                            <li onmouseover="foto('_imagens/contato.png')"
+                                onmouseout="foto('_imagens/especificacoes.png')"> <a href="fale-conosco.html">Fale
+                                    conosco</a>
                             </li>
                         </ul>
                     </nav>
@@ -45,19 +63,22 @@
                 <header id="cabecalho-artigo">
                     <p>
                         <h2>Glass > Especificações</h2>
-                       <h2> Raio-X no Google Glass</h2>
-                       <h3> por Laysse Mota silva</h3>
+                        <h2> Raio-X no Google Glass</h2>
+                        <h3> por Laysse Mota silva</h3>
                         <h3 id="format"> <span> em 01/Maio/2013</span></h3>
                     </p>
                 </header>
-                <p>
-                    Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do
-                    Google Glass.
-                    Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.
-
-                    [AQUI ENTRA UMA IMAGEM]
-                </p>
-
+                <section id="corpo-full">
+                    <p>
+                        Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do
+                        Google Glass.
+                        Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.
+                    </p>
+                    <section id="conteudo"> 
+                        <img id="interacao" src="_imagens/glass-esquema-marcado3.jpg" >
+                        <iframe src="google-glass.html" frameborder="0" name="janela" id="frame-spec"></iframe>
+                    </section>
+                </section>
             </article>
         </section>
 
