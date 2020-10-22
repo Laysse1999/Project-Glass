@@ -53,7 +53,12 @@ p {
     text-align: justify;
     text-indent: 50px;
 }
-
+/*imagem logo*/
+img#lo{
+    border-radius: 10px;
+    position: relative;
+    margin-top:65px;
+}
 
 /*Imagem oculos*/
 figure.foto-legenda {
@@ -157,7 +162,7 @@ h2#ti2 {
     color: rgb(151, 151, 151);
     font-size: 15pt;
     padding: 0px;
-    margin-top: 1px;
+    margin-bottom: -28px;
 }
 /*Css do footer*/
 
