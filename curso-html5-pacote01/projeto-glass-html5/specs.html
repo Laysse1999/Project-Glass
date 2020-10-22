@@ -8,18 +8,25 @@
     <link rel="stylesheet" href="specs.css">
     <title>Google Glass</title>
     <style>
-        section#corpo{
+        section#corpo {
             width: auto;
         }
-        img#interacao{
+
+        img#interacao {
             border-radius: 10px;
             width: 400px;
             height: 270px;
         }
-        iframe#frame-spec{
+
+        iframe#frame-spec {
             width: 300px;
             height: 280px;
             border: none;
+            overflow: hidden;
+        }
+
+        iframe#frame-spec::-webkit-scrollbar {
+            display: none;
         }
     </style>
 </head>
@@ -27,9 +34,9 @@
 
 <body>
     <div id="interface">
-        <div id="logo" style="background-image: url(_imagens/glass-logo-peq.jpg) ;background-repeat: no-repeat;
-        background-position: 0px 95px; ">
-            <h1 id="ti1"> Google Glass</h1>
+        <div id="logo" background-repeat: no-repeat; background-position: 0px 95px;border-radius: 25px; ">
+            <img id=" lo" src="_imagens/glass-logo-peq3.jpg" alt="Logo do Google Glass">
+
             <h2 id="ti2">A revolução do Google está chegando</h2>
             <header id="cabecalho">
                 <div id="titulos">
@@ -74,15 +81,18 @@
                         Google Glass.
                         Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.
                     </p>
-                    <section id="conteudo"> 
-                        <img id="interacao" src="_imagens/glass-esquema-marcado3.jpg" >
+                    <section id="conteudo">
+                        <img id="interacao" src="_imagens/glass-esquema-marcado3.jpg" usemap="#meuMapa">
+                        <map name="meuMapa">
+                            <area shape="rect" coords="251,271,180,254" href="google-glass.html#tela">
+                        </map>
                         <iframe src="google-glass.html" frameborder="0" name="janela" id="frame-spec"></iframe>
                     </section>
                 </section>
             </article>
         </section>
 
-        <footer>&copy;Copyright 2013 - by Laysse Mota Silva
+        <footer>&copy;Copyright 2020 - by Laysse Mota Silva
             <br>
             <a href="https://www.facebook.com/Layssemota/">Facebook</a>
             |
