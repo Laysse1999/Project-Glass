@@ -10,12 +10,12 @@
     <style>
         section#corpo {
             width: auto;
+            height: 600px;
         }
 
         img#interacao {
             border-radius: 10px;
-            width: 400px;
-            height: 270px;
+
         }
 
         iframe#frame-spec {
@@ -23,10 +23,15 @@
             height: 280px;
             border: none;
             overflow: hidden;
+            height: 350px;
         }
 
         iframe#frame-spec::-webkit-scrollbar {
             display: none;
+        }
+        area{
+            outline: 0;
+            
         }
     </style>
 </head>
@@ -82,9 +87,12 @@
                         Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.
                     </p>
                     <section id="conteudo">
-                        <img id="interacao" src="_imagens/glass-esquema-marcado3.jpg" usemap="#meuMapa">
+                        <img id="interacao" src="_imagens/glass-esquema-marcado4.jpg" usemap="#meuMapa">
                         <map name="meuMapa">
-                            <area shape="rect" coords="251,271,180,254" href="google-glass.html#tela">
+                            <area id="ar" shape="rect" coords="178,201,269,248"  href="google-glass.html#tela" target="janela">
+                            <area shape="circle" coords="157,243,12" href="google-glass.html#camera" target="janela" >
+                            <area shape="circle" coords="75,50,10" href="google-glass.html#bg" target="janela">
+                            <area shape="poly" coords="27,145,82,216,81,246,24,161" href="google-glass.html#sensores" target="janela" >
                         </map>
                         <iframe src="google-glass.html" frameborder="0" name="janela" id="frame-spec"></iframe>
                     </section>

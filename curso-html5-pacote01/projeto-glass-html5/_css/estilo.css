@@ -53,6 +53,11 @@ p {
     text-align: justify;
     text-indent: 50px;
 }
+/*Imagem oculos-esquema-marcado*/
+img#interacao{
+    background-color: rgba(169, 169, 169, 0.596); ;
+}
+
 /*imagem logo*/
 img#lo{
     border-radius: 10px;
@@ -164,6 +169,7 @@ h2#ti2 {
     padding: 0px;
     margin-bottom: -28px;
 }
+
 /*Css do footer*/
 
 footer{
