@@ -29,9 +29,14 @@
         iframe#frame-spec::-webkit-scrollbar {
             display: none;
         }
-        area{
+
+        area {
             outline: 0;
-            
+
+        }
+
+        map#meuMapa:hover area#ar {
+            opacity: 1;
         }
     </style>
 </head>
@@ -89,10 +94,12 @@
                     <section id="conteudo">
                         <img id="interacao" src="_imagens/glass-esquema-marcado4.jpg" usemap="#meuMapa">
                         <map name="meuMapa">
-                            <area id="ar" shape="rect" coords="178,201,269,248"  href="google-glass.html#tela" target="janela">
-                            <area shape="circle" coords="157,243,12" href="google-glass.html#camera" target="janela" >
+                            <area id="ar" shape="rect" coords="178,201,269,248" href="google-glass.html#tela"
+                                target="janela">
+                            <area shape="circle" coords="157,243,12" href="google-glass.html#camera" target="janela">
                             <area shape="circle" coords="75,50,10" href="google-glass.html#bg" target="janela">
-                            <area shape="poly" coords="27,145,82,216,81,246,24,161" href="google-glass.html#sensores" target="janela" >
+                            <area shape="poly" coords="27,145,82,216,81,246,24,161" href="google-glass.html#sensores"
+                                target="janela">
                         </map>
                         <iframe src="google-glass.html" frameborder="0" name="janela" id="frame-spec"></iframe>
                     </section>
