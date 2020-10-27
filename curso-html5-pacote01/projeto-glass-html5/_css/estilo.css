@@ -18,7 +18,7 @@ body {
 
 section#corpo{
     display: block;
-    width: 500px;
+    width: 900px;
     float: left;
     border-right: 1px rgb(0, 0, 0) dashed;
     padding-right: 15px;
@@ -29,7 +29,7 @@ section#corpo{
 }
 
 div#interface {
-    width: 900px;
+    width: 1100px;
     background-color: white;
     margin: -20px auto 0px auto;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.486);
@@ -40,18 +40,25 @@ div#interface {
 
 aside#lateral{
     display: block;
-    width: 350px;
+    width: 500px;
     float: right;
     background-color: rgba(169, 169, 169, 0.596);
-    padding: 10px;
+    padding: 20px;
     margin-top: 6px;
     box-shadow: 5px 5px rgb(172, 172, 172);
     border-radius: 15px;
+
+}
+
+aside#lateral p {
+    margin-top: 10px;
 }
 
 p {
     text-align: justify;
     text-indent: 50px;
+    margin-left: 4px;
+    margin-right: 4px ;
 }
 /*Imagem oculos-esquema-marcado*/
 img#interacao{
@@ -95,7 +102,7 @@ figure.foto-legenda figcaption {
 }
 img#ocu {
     position: absolute;
-    left: 1070px;
+    left: 1085px;
     top: 73px;
 }
 /*Dispara quando acionado:*/
