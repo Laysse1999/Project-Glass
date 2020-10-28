@@ -5,13 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="_css/estilo.css">
+    <link rel="stylesheet" href="media.css">
     <title>Google Glass</title>
     <style>
-        video {
+        iframe#video {
             border-radius: 15px;
             margin-left: 10px;
         }
+        audio::-webkit-media-controls-timeline {
+            display: none;
+        }
 
+        audio::-webkit-media-controls-panel {
+            background-color:  rgb(97, 96, 96);
+            outline: 0;
+        }
     </style>
 </head>
 <script src="script1.js"></script>
@@ -56,17 +64,23 @@
                     <h3> por Laysse Mota Silva </h3>
                     <h3 id="format"><span> Atualizado em Outrubro/2020</span></h3>
                 </header>
-                <div id="tv-radio">
+                <div id="tv-radio" style="background: url('../_imagens/radio-tv.png') no-repeat;">
                     <h2>Canção: Lovers carvings bibio</h2>
                     <audio id="musica" controls>
                         <source src="_media/_media/2009-lovers-carvings-bibio.mp3" type="audio/mpeg">
                         Desculpe mas não foi possivel carregar o audio!
                     </audio>
                     <h2>Video: Getting started</h2>
+                            
+                    <iframe id="video" width="520" height="305" src="https://www.youtube.com/embed/4EvNxWhskf8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                <!--
+                    Outro modo de alocar o video:
+
                     <video id="filme" controls poster="_imagens/video-mini03.jpg">
                         <source src="_media/_media/getting-started.mp4" type="video/mp4">
                         Desculpe mas não foi possivel carregar o video!
-                    </video>
+                    </video>-->
                 </div>
 
             </article>

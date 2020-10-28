@@ -17,7 +17,12 @@
             font-weight: bolder;
         }
 
-        video {
+        iframe#how-video {
+            border-radius: 20px;
+            margin-top: 10px;
+        }
+
+        iframe#multi {
             border-radius: 20px;
             margin-top: 10px;
         }
@@ -25,11 +30,14 @@
         div#how-video video {
             margin-bottom: 10px;
         }
-        section#corpo{
-            width: 535px;
+
+        div#multi {
+            margin-bottom: 10px;
         }
 
-       
+        section#corpo {
+            width: 535px;
+        }
     </style>
 </head>
 <script src="script1.js"></script>
@@ -165,9 +173,11 @@
                         voz.
 
                         <div id="how-video">
-                            <video controls poster="_imagens/video-mini01.jpg">
-                                <source src="_media/_media/how-it-feels.mp4" type="video/mp4">
-                                Desculpe mas não foi possivel carregar o video!
+                            <iframe id="how-video" width="510" height="295"
+                                src="https://www.youtube.com/embed/4EvNxWhskf8" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+
                             </video>
                         </div>
                     </p>
@@ -182,9 +192,10 @@
                     <h2>Vídeo mais recente: </h2>
 
                     <div id="multi">
-                        <video controls poster="_imagens/video-mini02.jpg">
-                            <source src="_media/_media/one-day.mp4" type="video/mp4">
-                            Desculpe mas não foi possivel carregar o video!
+                        <iframe id="multi" width="500" height="295" src="https://www.youtube.com/embed/ky-ZV8e3YyM"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
                         </video>
                     </div>
                 </p>
