@@ -23,13 +23,34 @@
             background-color: rgba(122, 120, 120, 0.966);
         }
 
+        .bar::-moz-range-progress {
+            background-color: rgb(100, 100, 100);
+        }
+
         select {
             border-radius: 12px;
             background-color: rgba(148, 145, 145, 0.966);
         }
+
+        fieldset#btnEnvia input{
+            margin-left: 310px;
+        }
+
+        fieldset{
+            border:2px 2px rgba(169, 169, 169, 0.952);
+            border-radius: 10px;
+        }
     </style>
 </head>
 <script src="script1.js"></script>
+<script>
+    function Calc_total() {
+        let quant = Number(document.querySelector('input#cQuant').value)
+        let tot = quant * 1500
+        document.querySelector('input#cTot').value = tot
+
+    }
+</script>
 
 <body>
     <div id="interface">
@@ -70,7 +91,7 @@
                     <h3> por Laysse Mota Silva </h3>
                     <h3 id="format"><span> Atualizado em Outubro/2020</span></h3>
                 </header>
-                <form method="POST" id="fContato" action="mailto:Layssemotasilva@live.com">
+                <form method="POST" id="fContato" action="mailto:Layssemotasilva@live.com" oninput="Calc_total()">
                     <fieldset id="usu">
                         <legend>Identificação do Usuário
 
@@ -153,32 +174,53 @@
                         <legend>Mensagem do Usuário</legend>
                         <p>
                             <label for="cGrau">Grau de Urgência:</label>
-                            <strong> 0</strong> <input type="range" name="tGrau" id="cGrau" min="0" max="100" step="2">
+                            <strong> 0</strong> <input class="bar" type="range" name="tGrau" id="cGrau" min="0"
+                                max="100" step="2">
                             <strong>100</strong>
                         </p>
                         <p>
                             <p>Mensagem:</p>
-                            <p><textarea name="tMsg" id="cMsg" cols="38" rows="15" placeholder="Deixe aqui sua mensagem"></textarea></p>
+                            <p><textarea name="tMsg" id="cMsg" cols="38" rows="15"
+                                    placeholder="Deixe aqui sua mensagem"></textarea></p>
                         </p>
                     </fieldset>
 
                     <fieldset id="quero">
                         <legend>Quero um Google Glass</legend>
-                        Gostaria de adquirir um Google Glass quando disponível
-                        Cor:
-                        Quantidade:
-                        Preço Total: R$
+                        <p>
+                            <input type="checkbox" name="tCheck" id="cCheck">
+                            <label for="cCheck">Gostaria de adquirir um Google Glass quando disponível</label>
+                        </p>
+                        <p>
+                            <label for="cCor">Cor:</label>
+                            <input type="color" name="tCor" id="cCor" value="rgba(122, 120, 120, 0.966);">
+                        </p>
+                        <p>
+                            <label for="cQuant">Quantidade:</label>
+                            <input type="number" name="tQuant" id="cQuant" min="0" max="5" value="0">
+                        </p>
+                        <p>
+                            <label for="cTot">Preço Total: R$</label>
+                            <input type="text" name="tTot" id="cTot" readonly>
+                        </p>
+
+                    </fieldset>
+
+                    <fieldset id="btnEnvia">
+                        <p>
+                            <input id="enviar" type="image" src="_imagens/botao-enviar.png">
+                        </p>
                     </fieldset>
 
 
-                    [BOTÃO ENVIAR]
+
                 </form>
             </article>
         </section>
 
         <footer>&copy;Copyright 2020 - by Laysse Mota Silva
             <br>
-            <a href="https://www.facebook.com/Layssemota/">Facebook</a>
+            <a href="https://www.instagram.com/laysse_mota/?hl=pt-br">Instagram</a>
             |
             <a href="https://www.linkedin.com/in/laysse-mota-219942142/">Linkedin</a>
 
